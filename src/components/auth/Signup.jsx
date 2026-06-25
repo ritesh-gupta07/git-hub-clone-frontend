@@ -22,7 +22,7 @@ const handleSingup = async (e)=>{
 e.preventDefault();
 try{
     setLoading(true);
-    const res = await axios.post("http://localhost:3002/signup",{
+    const res = await axios.post("http://3.27.14.214:3002/signup",{
         email:email,
         username:username,
         password:password

@@ -13,7 +13,7 @@ const Dashboard = () => {
 
     const fetchRepositories = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/repo/user/${userId}`);
+        const response = await fetch(`http://3.27.14.214:3002/repo/user/${userId}`);
 
         const data = await response.json();
         if (data.error) {
@@ -31,7 +31,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch(`http://localhost:3002/repo/all`);
+        const response = await fetch(`http://3.27.14.214:3002/repo/all`);
 
         const data = await response.json();
 

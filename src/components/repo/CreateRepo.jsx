@@ -14,7 +14,7 @@ const CreateRepository = () => {
       const owner = localStorage.getItem("userId");
 
       const res = await axios.post(
-        "http://localhost:3002/repo/create",
+        "http://3.27.14.214:3002/repo/create",
         {
           name,
           description,

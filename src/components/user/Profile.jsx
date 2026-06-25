@@ -23,7 +23,7 @@ const Profile = () => {
     const fetchUser = async (userId) => {
         try {
             const response = await axios.get(
-                `http://localhost:3002/userProfile/${userId}`
+                `http://3.27.14.214:3002/userProfile/${userId}`
             );
 
             // console.log("User:", response.data);
@@ -37,7 +37,7 @@ const Profile = () => {
     const fetchRepositories = async (userId) => {
         try {
             const response = await axios.get(
-                `http://localhost:3002/repo/user/${userId}`
+                `http://3.27.14.214:3002/repo/user/${userId}`
             );
 
             // console.log("Repositories:", response.data);
