@@ -1,0 +1,82 @@
+.create-repo-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  color: #f0f6fc;
+}
+
+.create-repo-container h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #58a6ff;
+}
+
+.create-repo-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-repo-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #c9d1d9;
+}
+
+.create-repo-container input[type="text"],
+.create-repo-container textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+}
+
+.create-repo-container input[type="text"]:focus,
+.create-repo-container textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+}
+
+.create-repo-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-repo-container input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.create-repo-container button {
+  background-color: #238636;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.create-repo-container button:hover {
+  background-color: #2ea043;
+}
+
+.create-repo-container button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .create-repo-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
